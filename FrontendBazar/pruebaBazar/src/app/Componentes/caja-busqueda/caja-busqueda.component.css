@@ -1,0 +1,53 @@
+.contPrincipal{
+    background-color: #182049;
+    background: #182049;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column; 
+
+}
+.container {
+    text-align: center; /* Alinea el contenido al centro horizontal */
+    margin-bottom: 20px; /* Agrega un margen inferior entre el contenedor y el siguiente elemento */
+}
+
+.container img {
+    display: block; /* Asegura que la imagen sea un bloque para poder aplicar márgenes */
+    margin: 0 auto 10px; 
+    margin-top: 120px;
+    /* Alinea la imagen al centro horizontalmente y agrega un margen inferior */
+}
+.input {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del contenedor */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+.button{
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del contenedor */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+}
+.search-button {
+    background-color: #ffe600; /* Color de fondo similar a Mercado Libre */
+    color: #333; /* Color del texto similar a Mercado Libre */
+}
+
+.search-button:hover {
+    background-color: #ffd700; /* Color de fondo al pasar el ratón similar a Mercado Libre */
+}
+.titulo {
+    margin-top: 20px;
+    font-size: 32px; /* Tamaño de la fuente */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fuente similar a la de Mercado Libre */
+   /* Color del texto similar a Mercado Libre */
+}
+.imagen {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    background: linear-gradient(to bottom, #ffd700, #ffe600); /* Degradado */
+}

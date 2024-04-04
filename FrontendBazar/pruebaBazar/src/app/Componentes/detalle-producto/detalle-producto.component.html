@@ -1,0 +1,20 @@
+<div class="detalle">
+  <div  *ngIf="product">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.description }}</p>
+    <p>{{ product.price }}</p>
+    <p>{{ product.discountPercentage }}</p>
+    <p>{{ product.rating }}</p>
+    <p>{{ product.stock }}</p>
+    <p>{{ product.brand }}</p>
+    <p>{{ product.category }}</p>
+    
+    <!-- Otros detalles del producto -->
+  </div>
+<div>
+  <button mat-raised-button color="warn" (click)="comprar(product)">Comprar</button>
+</div>
+
+</div>
+
+

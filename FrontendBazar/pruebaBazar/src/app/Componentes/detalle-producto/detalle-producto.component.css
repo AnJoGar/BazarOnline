@@ -1,0 +1,32 @@
+.detalle {
+    text-align: center;
+    margin-top: 7% /* Centra horizontalmente el contenido */
+  }
+  
+  .contenido-centrado {
+    display: inline-block; /* Hace que el contenedor se ajuste al ancho del contenido */
+    text-align: left; /* Vuelve a alinear el texto a la izquierda dentro del contenedor */
+  }
+  .detalle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente del detalle */
+    border: 1px solid #ccc; /* Agrega un borde al detalle */
+    padding: 20px; /* Agrega espaciado interno al detalle */
+    margin-top: 20px; /* Agrega espacio encima del detalle */
+  }
+
+  .detalle h2 {
+    font-size: 1.5em; /* Cambia el tamaño del título */
+    color: #333; /* Cambia el color del título */
+    margin-bottom: 10px; /* Ajusta el espacio después del título */
+  }
+
+  .detalle p {
+    font-size: 1em; /* Cambia el tamaño del texto */
+    color: #666; /* Cambia el color del texto */
+    margin-bottom: 5px; /* Ajusta el espacio después del texto */
+  }
+
+  .detalle button {
+    font-size: 1em; /* Cambia el tamaño del botón */
+    margin-top: 10px; /* Ajusta el espacio encima del botón */
+  }

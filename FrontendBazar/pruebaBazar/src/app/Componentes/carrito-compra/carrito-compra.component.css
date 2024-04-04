@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Para centrar verticalmente en la pantalla */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .total-compras {
+    text-align: center;
+  }
+  .container {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente del contenedor */
+  }
+
+  .card-container {
+    margin-top: 20px; /* Añade un espacio encima del contenedor de tarjetas */
+  }
+
+  .mat-card {
+    margin-bottom: 10px; /* Añade un espacio debajo de cada tarjeta */
+  }
+
+  .mat-card-title {
+    font-size: 1.2em; /* Cambia el tamaño del título de la tarjeta */
+    color: #333; /* Cambia el color del título de la tarjeta */
+  }
+
+  .mat-card-content p {
+    font-size: 1em; /* Cambia el tamaño del texto del contenido de la tarjeta */
+    color: #666; /* Cambia el color del texto del contenido de la tarjeta */
+  }
+
+  .total-compras {
+    font-size: 1.2em; /* Cambia el tamaño del texto del total de compras */
+    color: #333; /* Cambia el color del texto del total de compras */
+    margin-top: 20px; /* Añade un espacio encima del total de compras */
+  }
+  .card-container {
+    display: grid; /* Usa un diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dos columnas con un ancho mínimo de 300px */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }

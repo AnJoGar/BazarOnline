@@ -1,0 +1,22 @@
+<div class="contPrincipal">
+    <div class="container">
+        <div>
+            <img src="assets/bazar.png" alt="Descripción de la imagen" class="imagen">
+        </div>
+        <div>
+            <h1 class="titulo">Bazar Online</h1>    
+        </div>        
+    </div>
+    <div>
+        <div class="input">
+            <mat-form-field class="example-form-field">
+                <mat-label >Ingresa el producto</mat-label>
+                <input matInput  type="text" [(ngModel)]="query"  placeholder="Ingrese su búsqueda">
+            </mat-form-field>
+        </div>       
+        <div class="button" >           
+            <button mat-raised-button (click)="buscarProductos()" color="warn" class="search-button" >Buscar</button>
+        </div>
+    </div>
+</div>
+

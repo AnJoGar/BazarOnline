@@ -1,0 +1,15 @@
+<div class="container" style="font-family: Arial, sans-serif;">
+  <div class="card-container mat-elevation-z2">
+      <mat-card *ngFor="let item of listaDeCompras">
+          <mat-card-header>
+              <mat-card-title>{{ item.producto.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+              <p>Precio: {{ item.producto.price }}</p>
+          </mat-card-content>
+      </mat-card>
+  </div>
+  <div>
+      <p class="total-compras">Total de compras: {{ obtenerTotalDeCompras() }}</p>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+
+<mat-card class="store-card" >
+  <mat-card-content>
+    <h2>Bazar CR7, el bazar de los campeones</h2>
+  </mat-card-content>
+</mat-card>
+
+<div class="carrito">
+
+  <button mat-raised-button color="warn" (click)="carrito()">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</div>
+
+<div class="container">
+  <div class="busqueda">  
+    <mat-form-field class="example-form-field">
+      <mat-label>Ingresa el producto</mat-label>
+      <input matInput type="text" [(ngModel)]="query" placeholder="Buscar...">
+    </mat-form-field>
+    <div class="button">
+      <button mat-raised-button color="warn" (click)="search(query)">Search</button>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div class="Lista">
+        <ul class="grid-container" *ngIf="resultados">
+          <li class="grid-item" *ngFor="let result of resultados">
+            <div class="item-content">
+              <img [src]="result.thumbnail" class="thumbnail">
+              <div class="text-content">
+                <h3>{{ result.title }}</h3>
+                <p>{{ result.price }}</p>
+                <p>{{ result.discountPercentage }}</p>
+                <button mat-raised-button color="warn" (click)="verDetalles(result.id)">Ver más..</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
